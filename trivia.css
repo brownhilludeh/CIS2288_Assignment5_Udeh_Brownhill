@@ -1,0 +1,31 @@
+/* For out css */
+ body {
+    background: #f8fafc;
+}
+
+.card {
+    max-width: 920px;
+    margin: 30px auto;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(20, 20, 50, 0.06);
+}
+
+.question-text {
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.progress-text {
+    font-size: 0.95rem;
+    color: #555;
+}
+
+.table-correct {
+    background-color: #b5f8af !important; /* Light green */
+}
+
+.table-wrong{
+    background-color: #ffb1b1 !important; /* Light red */
+}
+
+/* Please check the rubric for ID contrainr and add it if needed */
