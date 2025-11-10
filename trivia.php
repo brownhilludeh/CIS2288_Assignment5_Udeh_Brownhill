@@ -238,7 +238,7 @@ $is_finished = isset($_SESSION['question_index']) && $_SESSION['question_index']
                 <table class="table table-bordered align-middle">
                     <thead class="table-light">
                         <tr>
-                            <th style="width:5%;">#</th>
+                            <th>Q.N</th>
                             <th>Question</th>
                             <th style="width:20%;">Correct Answer</th>
                             <th style="width:25%;">Your Answer</th>
