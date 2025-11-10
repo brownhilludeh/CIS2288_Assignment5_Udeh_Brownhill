@@ -1,3 +1,10 @@
+/** @author Brownhill Udeh <budeh@hollandcollege.com>
+* @author John Ekpigun <jekpigun@hollandcollege.com>
+* @purpose css styling for the trivia.php page
+* @since 2025-11-10
+TODO: Create a CSS file for trivia that meets the program requirements
+*/
+
 /* For out css */
  body {
     background: #f8fafc;
@@ -28,4 +35,3 @@
     background-color: #ffb1b1 !important; /* Light red */
 }
 
-/* Please check the rubric for ID contrainr and add it if needed */

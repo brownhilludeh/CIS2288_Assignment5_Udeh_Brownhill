@@ -4,7 +4,7 @@
  * Trivia Game
  *
  * trivia.php
- * TODO: Bro check these in order and make sure they are correct
+ * TODO: check these in order and make sure they are correct
  * Requirements covered:
  *  - Session-based state management
  *  - Loads any number of questions from triviaQuestions.txt (tab-separated)
@@ -17,6 +17,7 @@
  * @depends on triviaQuestions.txt
  * @dependencies bootstrap.min.css, bootstrap.min.js
  * @author Brownhill Udeh <budeh@hollandcollege.com>
+ * @author John Ekpigun <jekpigun@hollandcollege.com>
  * @version 5.1
  * @since 2025-11-08
  */
@@ -254,8 +255,9 @@ $is_finished = isset($_SESSION['question_index']) && $_SESSION['question_index']
                             // Compare case-insensitively after trimming
                             $is_correct = (strcasecmp(trim($user), trim($correct)) === 0);
                             if ($is_correct) $correct_count++;
-                            
+
                             $row_class = $is_correct ? 'table-correct' : 'table-wrong';
+
                         ?>
                         <tr class="<?= $row_class ?>">
                             <td><?= $i + 1 ?></td>
