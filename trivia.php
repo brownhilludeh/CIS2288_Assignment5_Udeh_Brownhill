@@ -257,17 +257,15 @@ $is_finished = isset($_SESSION['question_index']) && $_SESSION['question_index']
                             
                             $row_class = $is_correct ? 'table-correct' : 'table-wrong';
                         ?>
-                        <tr class="<?= $row_class ?>">
-                            <td><?= $i + 1 ?></td>
+                        <?php if ($is_correct): ?>
+                            <tr class="table-success">
+                        <?php else: ?>
+                            <tr class="table-danger">
+                        <?php endif; ?>
+                            <td class="text-center"><?= $i + 1 ?></td>
                             <td><?= nl2br(htmlspecialchars($questions[$i]['question'])) ?></td>
-                            <td><?= htmlspecialchars($correct) ?></td>
-                            <td>
-                                <?php if ($user !== ''): ?>
-                                    <?= htmlspecialchars($user) ?>
-                                <?php else: ?>
-                                    <em class="text-muted">None</em>
-                                <?php endif; ?>
-                            </td>
+                            <td class="text-center"><?= nl2br(htmlspecialchars($correct)) ?></td>
+                            <td class="text-center"><?= nl2br(htmlspecialchars($user)) ?></td>
                         </tr>
                         <?php endfor; ?>
                     </tbody>
